@@ -5,7 +5,7 @@ def join_nested_strings(src)
   
   src.each do |outer_index|
     src[outer_index].each do |inner_index|
-      if inner_index.instance_of?
+      if inner_index.instance_of? String
         
     end
   end
