@@ -10,6 +10,7 @@ def join_nested_strings(src)
       if src[outer_counter][inner_counter].instance_of? String
         final_string.concat(src[outer_counter][inner_counter] + " ")
       end
+      inner_counter += 1
     end
     outer_counter += 1
   end
