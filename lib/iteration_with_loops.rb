@@ -6,8 +6,11 @@ def join_nested_strings(src)
   src.each do |outer_index|
     src[outer_index].each do |inner_index|
       if inner_index.instance_of? String
-        
+        final_string.concat(inner_index + " ")
+      end
     end
   end
+  
+  final_string
   
 end
